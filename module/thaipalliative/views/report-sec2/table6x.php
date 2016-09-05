@@ -7,8 +7,8 @@ use yii\helpers\Url;
 $domain=Url::home();
 ?>
 <div class="container">
-  <h2>ตารางที่  6</h2>
-  <p>จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Cancer ทุกประเภท</p>
+  <h2>ตารางที่ 5 </h2>
+  <p>จำนวนและร้อยละหน่วยบริการและผู้ป่วย รวมทุกโรค</p>
   <table class="table table-hover">
     <thead>
   <tr  bgcolor="#88DDBB">
