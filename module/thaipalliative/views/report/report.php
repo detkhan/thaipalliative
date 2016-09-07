@@ -144,11 +144,7 @@ $domain=Url::home();
         <a id="showdata" dataurl="table5" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g9" >ตารางที่ 5 จำนวนและร้อยละหน่วยบริการและผู้ป่วย รวมทุกโรค	</div></a>
         </div>
         <div>
-        <div class="g10" >ตารางที่ 6 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Cancer ทุกประเภท</div>
-        <div class="g10" style="display:none">
-        <p>  ตารางที่ 6 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Cancer ทุกประเภท	</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table6" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g10" >ตารางที่ 6 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Cancer ทุกประเภท</div></a>
         </div>
         <div>
         <div class="g101" >ตารางที่ 6.1 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรคมะเร็งท่อน้ำดี	</div>
@@ -158,61 +154,29 @@ $domain=Url::home();
         </div>
         </div>
         <div>
-        <div class="g11" >ตารางที่ 7 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค End stage renal diseases</div>
-        <div class="g11" style="display:none">
-        <p>  ตารางที่ 7 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค End stage renal diseases	</p>
-        <p> </p>
-        </div>
+        <a id="showdata" dataurl="table7" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g11" >ตารางที่ 7 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค End stage renal diseases</div></a>
         </div>
         <div>
-        <div class="g12" >ตารางที่ 8 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Frailty dementia</div>
-        <div class="g12" style="display:none">
-        <p>  ตารางที่ 8 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Frailty dementia	</p>
-        <p> </p>
-        </div>
+        <a id="showdata" dataurl="table8" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g12" >ตารางที่ 8 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Trauma</div></a>
         </div>
         <div>
-        <div class="g13" >ตารางที่ 9 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค End stage lung diseases	</div>
-        <div class="g13" style="display:none">
-        <p>  ตารางที่ 9 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค End stage lung diseases		</p>
-        <p> </p>
-        </div>
+        <a id="showdata" dataurl="table9" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g13" >ตารางที่ 9 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค End stage lung diseases	</div></a>
         </div>
         <div>
-        <div class="g14" >ตารางที่ 10 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Neurological diseases</div>
-        <div class="g14" style="display:none">
-        <p>  ตารางที่ 10 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Neurological diseases	</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table10" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g14" >ตารางที่ 10 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Neurological diseases</div></a>
         </div>
         <div>
-        <div class="g15" >ตารางที่ 11 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค End stage heart diseases	</div>
-        <div class="g15" style="display:none">
-        <p>  ตารางที่ 11 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค End stage heart diseases	</p>
-        <p> </p>
-        </div>
+        <a id="showdata" dataurl="table11" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g15" >ตารางที่ 11 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค End stage heart diseases	</div></a>
         </div>
         <div>
-        <div class="g16" >ตารางที่ 12 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรคอื่นๆ (ระบุ ..................)</div>
-        <div class="g16" style="display:none">
-        <p>  ตารางที่ 12 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรคอื่นๆ (ระบุ ..................)	</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table12" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g16" >ตารางที่ 12 จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรคอื่นๆ</div></a>
         </div>
         <h4>2.2   จำนวนผู้ป่วยระยะประคับประคองจำแนกตามเวลาเป็นรายเดือน เฉพาะปี พ.ศ. xxxx	</h4>
         <div>
-        <div class="g17" >ตารางที่ 13 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน รวมทุกโรค ปี พ.ศ. xxxx</div>
-        <div class="g17" style="display:none">
-        <p> ตารางที่ 13 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน รวมทุกโรค ปี พ.ศ. xxxx	</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table13" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g17" >ตารางที่ 13 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน รวมทุกโรค ปี พ.ศ. xxxx</div></a>
         </div>
         <div>
-        <div class="g18" >ตารางที่ 14 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค Cancer</div>
-        <div class="g18" style="display:none">
-        <p> ตารางที่ 14 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค Cancer</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table14" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g18" >ตารางที่ 14 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค Cancer</div></a>
         </div>
         <div>
         <div class="g181" >ตารางที่ 14x จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรคมะเร็งท่อน้ำดี</div>
@@ -222,42 +186,22 @@ $domain=Url::home();
         </div>
         </div>
         <div>
-        <div class="g19" >ตารางที่ 15 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค End stage renal diseases</div>
-        <div class="g19" style="display:none">
-        <p> ตารางที่ 15 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค End stage renal diseases	</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table15" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g19" >ตารางที่ 15 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค End stage renal diseases</div></a>
         </div>
         <div>
-        <div class="g20" >ตารางที่ 16 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค Frailty dementia</div>
-        <div class="g20" style="display:none">
-        <p> ตารางที่ 16 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค Frailty dementia	</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table16" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g20" >ตารางที่ 16 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค Frailty dementia</div></a>
         </div>
         <div>
-        <div class="g21" >ตารางที่ 17 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค End stage lung diseases</div>
-        <div class="g21" style="display:none"><p>ตารางที่ 17 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค End stage lung diseases</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table17" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g21" >ตารางที่ 17 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค End stage lung diseases</div></a>
         </div>
         <div>
-        <div class="g22" >ตารางที่ 18 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค Neurological diseases</div>
-        <div class="g22" style="display:none"><p>ตารางที่ 18 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค Neurological diseases</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table18" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g22" >ตารางที่ 18 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค Neurological diseases</div></a>
         </div>
         <div>
-        <div class="g23" >ตารางที่ 19 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค End stage heart diseases</div>
-        <div class="g23" style="display:none"><p>ตารางที่ 19 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค End stage heart diseases</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table19" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g23" >ตารางที่ 19 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรค End stage heart diseases</div></a>
         </div>
         <div>
-        <div class="g24" >ตารางที่ 20 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรคอื่นๆ (ระบุ ...............)</div>
-        <div class="g24" style="display:none"><p>ตารางที่ 20 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรคอื่นๆ (ระบุ ...............)</p>
-        <p></p>
-        </div>
+        <a id="showdata" dataurl="table20" sec="report-sec2" data-toggle="modal" data-target="#myModal"><div class="g24" >ตารางที่ 20 จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน เฉพาะกลุ่มโรคอื่นๆ</div></a>
         </div>
         <h4>2.3 	จำนวนผู้ป่วยระยะประคับประคองจำแนกตามอายุและเพศ เฉพาะช่วงที่เรียกแสดงรายงาน</h4>
         <div>

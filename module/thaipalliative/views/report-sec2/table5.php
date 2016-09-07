@@ -9,7 +9,7 @@ $domain=Url::home();
 <div class="container">
   <h2>ตารางที่ 5 </h2>
   <p>จำนวนและร้อยละหน่วยบริการและผู้ป่วย รวมทุกโรค</p>
-  <table class="table table-bordered">
+  <table class="table table-hover">
     <thead>
   <tr  bgcolor="#88DDBB">
     <td rowspan="3"><center>ระดับ</center></td>

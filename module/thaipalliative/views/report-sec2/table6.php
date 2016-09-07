@@ -7,9 +7,9 @@ use yii\helpers\Url;
 $domain=Url::home();
 ?>
 <div class="container">
-  <h2>ตารางที่  6</h2>
-  <p>จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Cancer ทุกประเภท</p>
-  <table class="table table-bordered">
+  <h2>ตารางที่ 6 </h2>
+  <p>จำนวนและร้อยละหน่วยบริการและผู้ป่วย เฉพาะกลุ่มโรค Cancer ทุกประเภท </p>
+  <table class="table table-hover">
     <thead>
   <tr  bgcolor="#88DDBB">
     <td rowspan="3"><center>ระดับ</center></td>
@@ -48,27 +48,27 @@ $domain=Url::home();
      <td align='right'>&nbsp;</td>
   </tr>
   <?php
-$totacount=count($dataArrayTable5Zone);
-$sumtotalZone=array_sum(array_column($dataArrayTable5Zone, 'total'));
+$totacount=count($dataArrayTable6Zone);
+$sumtotalZone=array_sum(array_column($dataArrayTable6Zone, 'total'));
 for ($i=0; $i < $totacount; $i++)
   {
    ?>
   <tr>
-    <td>เขตสุขภาพที่ <?= $dataArrayTable5Zone[$i][zone_code]  ?></td>
+    <td>เขตสุขภาพที่ <?= $dataArrayTable6Zone[$i][zone_code]  ?></td>
     <td align='right'>&nbsp;</td>
     <td align='right'>&nbsp;</td>
-    <td align='right'><?= $dataArrayTable5Zone[$i][total]  ?></td>
-    <td align='right'><?=  number_format(($dataArrayTable5Zone[$i][total]/$sumtotalZone)*100,2)  ?></td>
+    <td align='right'><?= $dataArrayTable6Zone[$i][total]  ?></td>
+    <td align='right'><?=  number_format(($dataArrayTable6Zone[$i][total]/$sumtotalZone)*100,2)  ?></td>
     <td align='right'>&nbsp;</td>
     <td align='right'>&nbsp;</td>
-    <td align='right'><?= $dataArrayTable5Zone[$i][total]  ?></td>
-    <td align='right'><?=  number_format(($dataArrayTable5Zone[$i][total]/$sumtotalZone)*100,2)  ?></td>
+    <td align='right'><?= $dataArrayTable6Zone[$i][total]  ?></td>
+    <td align='right'><?=  number_format(($dataArrayTable6Zone[$i][total]/$sumtotalZone)*100,2)  ?></td>
   </tr>
   <?php
 }
    ?>
   <tr bgcolor="#96db1e">
-    <td >เขตสุขภาพที่เลือกแสดงรายงาน (เขต <?= $dataArrayTable5Province[0][zone_code]  ?>)</td>
+    <td >เขตสุขภาพที่เลือกแสดงรายงาน (เขต <?= $dataArrayTable6Province[0][zone_code]  ?>)</td>
     <td align='right'>&nbsp;</td>
     <td align='right'>&nbsp;</td>
     <td align='right'>&nbsp;</td>
@@ -79,21 +79,21 @@ for ($i=0; $i < $totacount; $i++)
     <td align='right'>&nbsp;</td>
   </tr>
   <?php
-$totacountProvince=count($dataArrayTable5Province);
-$sumtotalProvince=array_sum(array_column($dataArrayTable5Province, 'total'));
+$totacountProvince=count($dataArrayTable6Province);
+$sumtotalProvince=array_sum(array_column($dataArrayTable6Province, 'total'));
 for ($i=0; $i < $totacountProvince; $i++)
   {
    ?>
   <tr>
-    <td ><?= $dataArrayTable5Province[$i][province]  ?></td>
+    <td ><?= $dataArrayTable6Province[$i][province]  ?></td>
     <td align='right'>&nbsp;</td>
     <td align='right'>&nbsp;</td>
-    <td align='right'><?= $dataArrayTable5Province[$i][total]  ?></td>
-    <td align='right'><?=  number_format(($dataArrayTable5Province[$i][total]/$sumtotalProvince)*100,2)  ?></td>
+    <td align='right'><?= $dataArrayTable6Province[$i][total]  ?></td>
+    <td align='right'><?=  number_format(($dataArrayTable6Province[$i][total]/$sumtotalProvince)*100,2)  ?></td>
     <td align='right'>&nbsp;</td>
     <td align='right'>&nbsp;</td>
-    <td align='right'><?= $dataArrayTable5Province[$i][total]  ?></td>
-    <td align='right'><?=  number_format(($dataArrayTable5Province[$i][total]/$sumtotalProvince)*100,2)  ?></td>
+    <td align='right'><?= $dataArrayTable6Province[$i][total]  ?></td>
+    <td align='right'><?=  number_format(($dataArrayTable6Province[$i][total]/$sumtotalProvince)*100,2)  ?></td>
   </tr>
   <?php
 }
