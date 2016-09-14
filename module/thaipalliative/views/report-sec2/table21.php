@@ -9,7 +9,7 @@ $domain=Url::home();
 <div class="table-responsive">
   <h2>ตารางที่ <?= $table  ?></h2>
   <p>จำนวนผู้ป่วย จำแนกตามสถานที่ อายุ และเพศ <?= $nametable  ?> ปี พ.ศ. 2016</p>
-  <table class="table table-hover">
+  <table class="table table-bordered">
     <thead>
   <tr  bgcolor="#92db1e">
   <td>พื้นที่</td>
@@ -29,13 +29,13 @@ $domain=Url::home();
   <tbody>
   <tr bgcolor="#96db1e">
     <td >ทั้งหมดใน Palliative Care Cloud</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
 
 
   </tr>
@@ -82,37 +82,37 @@ foreach ($dataArrayTable21Zone as $key) {
    ?>
   <tr>
     <td>เขตสุขภาพที่ <?= $key[zone_code] ?></td>
-    <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
+    <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
 
 
   </tr>
   <tr>
-    <td align='right'>ชาย</td>
-     <td align='right'><?= $datasumsex1  ?></td>
-     <td align='right'><?= $dataarray[$key[zone_code]]['<40'][1] ?></td>
-     <td align='right'><?= $dataarray[$key[zone_code]]['40+'][1] ?></td>
-   <td align='right'><?= $dataarray[$key[zone_code]]['50+'][1] ?></td>
-   <td align='right'><?= $dataarray[$key[zone_code]]['60+'][1] ?></td>
-     <td align='right'><?= $dataarray[$key[zone_code]]['70+'][1] ?></td>
-     <td align='right'><?= $dataarray[$key[zone_code]]['80+'][1] ?></td>
+    <td align='center'>ชาย</td>
+     <td align='center'><?= $datasumsex1  ?></td>
+     <td align='center'><?= $dataarray[$key[zone_code]]['<40'][1] ?></td>
+     <td align='center'><?= $dataarray[$key[zone_code]]['40+'][1] ?></td>
+   <td align='center'><?= $dataarray[$key[zone_code]]['50+'][1] ?></td>
+   <td align='center'><?= $dataarray[$key[zone_code]]['60+'][1] ?></td>
+     <td align='center'><?= $dataarray[$key[zone_code]]['70+'][1] ?></td>
+     <td align='center'><?= $dataarray[$key[zone_code]]['80+'][1] ?></td>
 
 
   </tr>
   <tr >
-    <td align='right'>หญิง</td>
-     <td align='right'><?= $datasumsex2  ?></td>
-     <td align='right'><?= $dataarray[$key[zone_code]]['<40'][2] ?></td>
-     <td align='right'><?= $dataarray[$key[zone_code]]['40+'][2] ?></td>
-   <td align='right'><?= $dataarray[$key[zone_code]]['50+'][2] ?></td>
-   <td align='right'><?= $dataarray[$key[zone_code]]['60+'][2] ?></td>
-     <td align='right'><?= $dataarray[$key[zone_code]]['70+'][2] ?></td>
-     <td align='right'><?= $dataarray[$key[zone_code]]['80+'][2] ?></td>
+    <td align='center'>หญิง</td>
+     <td align='center'><?= $datasumsex2  ?></td>
+     <td align='center'><?= $dataarray[$key[zone_code]]['<40'][2] ?></td>
+     <td align='center'><?= $dataarray[$key[zone_code]]['40+'][2] ?></td>
+   <td align='center'><?= $dataarray[$key[zone_code]]['50+'][2] ?></td>
+   <td align='center'><?= $dataarray[$key[zone_code]]['60+'][2] ?></td>
+     <td align='center'><?= $dataarray[$key[zone_code]]['70+'][2] ?></td>
+     <td align='center'><?= $dataarray[$key[zone_code]]['80+'][2] ?></td>
 
 
   </tr>
@@ -122,38 +122,38 @@ foreach ($dataArrayTable21Zone as $key) {
 
   <tr>
     <td bgcolor "#84db1e">รวม</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
 
 
   </tr>
 
   <tr>
-    <td align='right'>ชาย</td>
-     <td align='right'><?= ($sumallsex1>0)?$sumallsex1:'';  ?></td>
-     <td align='right'><?= ($sumsexall11>0)?$sumsexall11:'';  ?></td>
-     <td align='right'><?= ($sumsexall12>0)?$sumsexall12:'';  ?></td>
-   <td align='right'><?= ($sumsexall13>0)?$sumsexall13:'';  ?></td>
-   <td align='right'><?= ($sumsexall14>0)?$sumsexall14:'';  ?></td>
-     <td align='right'><?= ($sumsexall15>0)?$sumsexall15:'';  ?></td>
-     <td align='right'><?= ($sumsexall16>0)?$sumsexall16:'';  ?></td>
+    <td align='center'>ชาย</td>
+     <td align='center'><?= ($sumallsex1>0)?$sumallsex1:'';  ?></td>
+     <td align='center'><?= ($sumsexall11>0)?$sumsexall11:'';  ?></td>
+     <td align='center'><?= ($sumsexall12>0)?$sumsexall12:'';  ?></td>
+   <td align='center'><?= ($sumsexall13>0)?$sumsexall13:'';  ?></td>
+   <td align='center'><?= ($sumsexall14>0)?$sumsexall14:'';  ?></td>
+     <td align='center'><?= ($sumsexall15>0)?$sumsexall15:'';  ?></td>
+     <td align='center'><?= ($sumsexall16>0)?$sumsexall16:'';  ?></td>
 
 
   </tr>
   <tr >
-    <td align='right'>หญิง</td>
-     <td align='right'><?= ($sumallsex2>0)?$sumallsex2:'';  ?></td>
-     <td align='right'><?= ($sumsexall21>0)?$sumsexall21:'';  ?></td>
-     <td align='right'><?= ($sumsexall22>0)?$sumsexall22:'';  ?></td>
-     <td align='right'><?= ($sumsexall23>0)?$sumsexall23:'';  ?></td>
-     <td align='right'><?= ($sumsexall24>0)?$sumsexall24:'';  ?></td>
-     <td align='right'><?= ($sumsexall25>0)?$sumsexall25:'';  ?></td>
-     <td align='right'><?= ($sumsexall26>0)?$sumsexall26:'';  ?></td>
+    <td align='center'>หญิง</td>
+     <td align='center'><?= ($sumallsex2>0)?$sumallsex2:'';  ?></td>
+     <td align='center'><?= ($sumsexall21>0)?$sumsexall21:'';  ?></td>
+     <td align='center'><?= ($sumsexall22>0)?$sumsexall22:'';  ?></td>
+     <td align='center'><?= ($sumsexall23>0)?$sumsexall23:'';  ?></td>
+     <td align='center'><?= ($sumsexall24>0)?$sumsexall24:'';  ?></td>
+     <td align='center'><?= ($sumsexall25>0)?$sumsexall25:'';  ?></td>
+     <td align='center'><?= ($sumsexall26>0)?$sumsexall26:'';  ?></td>
 
 
   </tr>
@@ -212,37 +212,37 @@ foreach ($dataArrayTable21Zone as $key) {
    ?>
   <tr>
     <td>จังหวัด <?= $key2[province] ?></td>
-    <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
+    <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
 
 
   </tr>
   <tr>
-    <td align='right'>ชาย</td>
-     <td align='right'><?= $datasum2sex1  ?></td>
-     <td align='right'><?= $dataarray2[$key2[provincecode]]['<40'][1] ?></td>
-     <td align='right'><?= $dataarray2[$key2[provincecode]]['40+'][1] ?></td>
-   <td align='right'><?= $dataarray2[$key2[provincecode]]['50+'][1] ?></td>
-   <td align='right'><?= $dataarray2[$key2[provincecode]]['60+'][1] ?></td>
-     <td align='right'><?= $dataarray2[$key2[provincecode]]['70+'][1] ?></td>
-     <td align='right'><?= $dataarray2[$key2[provincecode]]['80+'][1] ?></td>
+    <td align='center'>ชาย</td>
+     <td align='center'><?= $datasum2sex1  ?></td>
+     <td align='center'><?= $dataarray2[$key2[provincecode]]['<40'][1] ?></td>
+     <td align='center'><?= $dataarray2[$key2[provincecode]]['40+'][1] ?></td>
+   <td align='center'><?= $dataarray2[$key2[provincecode]]['50+'][1] ?></td>
+   <td align='center'><?= $dataarray2[$key2[provincecode]]['60+'][1] ?></td>
+     <td align='center'><?= $dataarray2[$key2[provincecode]]['70+'][1] ?></td>
+     <td align='center'><?= $dataarray2[$key2[provincecode]]['80+'][1] ?></td>
 
 
   </tr>
   <tr >
-    <td align='right'>หญิง</td>
-     <td align='right'><?= $datasum2sex2  ?></td>
-     <td align='right'><?= $dataarray2[$key2[provincecode]]['<40'][2] ?></td>
-     <td align='right'><?= $dataarray2[$key2[provincecode]]['40+'][2] ?></td>
-   <td align='right'><?= $dataarray2[$key2[provincecode]]['50+'][2] ?></td>
-   <td align='right'><?= $dataarray2[$key2[provincecode]]['60+'][2] ?></td>
-     <td align='right'><?= $dataarray2[$key2[provincecode]]['70+'][2] ?></td>
-     <td align='right'><?= $dataarray2[$key2[provincecode]]['80+'][2] ?></td>
+    <td align='center'>หญิง</td>
+     <td align='center'><?= $datasum2sex2  ?></td>
+     <td align='center'><?= $dataarray2[$key2[provincecode]]['<40'][2] ?></td>
+     <td align='center'><?= $dataarray2[$key2[provincecode]]['40+'][2] ?></td>
+   <td align='center'><?= $dataarray2[$key2[provincecode]]['50+'][2] ?></td>
+   <td align='center'><?= $dataarray2[$key2[provincecode]]['60+'][2] ?></td>
+     <td align='center'><?= $dataarray2[$key2[provincecode]]['70+'][2] ?></td>
+     <td align='center'><?= $dataarray2[$key2[provincecode]]['80+'][2] ?></td>
 
 
   </tr>
@@ -251,44 +251,44 @@ foreach ($dataArrayTable21Zone as $key) {
    ?>
   <tr>
     <td>รวมทุกจังหวัด</td>
-    <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-   <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
+    <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+   <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
 
 
   </tr>
   <tr>
-    <td align='right'>ชาย</td>
-     <td align='right'><?= ($sumall2sex1>0)?$sumall2sex1:'';  ?></td>
-     <td align='right'><?= ($sum2sexall11>0)?$sum2sexall11:'';  ?></td>
-     <td align='right'><?= ($sum2sexall12>0)?$sum2sexall12:'';  ?></td>
-   <td align='right'><?= ($sum2sexall13>0)?$sum2sexall13:'';  ?></td>
-   <td align='right'><?= ($sum2sexall14>0)?$sum2sexall14:'';  ?></td>
-     <td align='right'><?= ($sum2sexall15>0)?$sum2sexall15:'';  ?></td>
-     <td align='right'><?= ($sum2sexall16>0)?$sum2sexall16:'';  ?></td>
+    <td align='center'>ชาย</td>
+     <td align='center'><?= ($sumall2sex1>0)?$sumall2sex1:'';  ?></td>
+     <td align='center'><?= ($sum2sexall11>0)?$sum2sexall11:'';  ?></td>
+     <td align='center'><?= ($sum2sexall12>0)?$sum2sexall12:'';  ?></td>
+   <td align='center'><?= ($sum2sexall13>0)?$sum2sexall13:'';  ?></td>
+   <td align='center'><?= ($sum2sexall14>0)?$sum2sexall14:'';  ?></td>
+     <td align='center'><?= ($sum2sexall15>0)?$sum2sexall15:'';  ?></td>
+     <td align='center'><?= ($sum2sexall16>0)?$sum2sexall16:'';  ?></td>
 
 
   </tr>
   <tr >
-    <td align='right'>หญิง</td>
-     <td align='right'><?= ($sumall2sex2>0)?$sumall2sex2:'';  ?></td>
-     <td align='right'><?= ($sum2sexall21>0)?$sum2sexall21:'';  ?></td>
-     <td align='right'><?= ($sum2sexall22>0)?$sum2sexall22:'';  ?></td>
-     <td align='right'><?= ($sum2sexall23>0)?$sum2sexall23:'';  ?></td>
-     <td align='right'><?= ($sum2sexall24>0)?$sum2sexall24:'';  ?></td>
-     <td align='right'><?= ($sum2sexall25>0)?$sum2sexall25:'';  ?></td>
-     <td align='right'><?= ($sum2sexall26>0)?$sum2sexall26:'';  ?></td>
+    <td align='center'>หญิง</td>
+     <td align='center'><?= ($sumall2sex2>0)?$sumall2sex2:'';  ?></td>
+     <td align='center'><?= ($sum2sexall21>0)?$sum2sexall21:'';  ?></td>
+     <td align='center'><?= ($sum2sexall22>0)?$sum2sexall22:'';  ?></td>
+     <td align='center'><?= ($sum2sexall23>0)?$sum2sexall23:'';  ?></td>
+     <td align='center'><?= ($sum2sexall24>0)?$sum2sexall24:'';  ?></td>
+     <td align='center'><?= ($sum2sexall25>0)?$sum2sexall25:'';  ?></td>
+     <td align='center'><?= ($sum2sexall26>0)?$sum2sexall26:'';  ?></td>
 
 
   </tr>
   </tbody>
   <tfoot>
   <tr bgcolor="#92db1e">
-    <td align="right"></td>
+    <td align="center"></td>
     <td>..</td>
     <td>..</td>
     <td>..</td>

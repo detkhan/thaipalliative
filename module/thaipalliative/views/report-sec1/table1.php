@@ -9,7 +9,7 @@ $domain=Url::home();
 <div class="table-responsive">
   <h2>ตารางที่ 1 </h2>
   <p>จำนวนและร้อยละผู้ป่วย ที่ให้บริการโดย <?=  $data[0][hosname] ?> จำแนกตามจังหวัดที่เป็นภูมิลำเนา</p>
-  <table class="table table-hover" width="50%">
+  <table class="table table-bordered">
     <thead>
   <tr  bgcolor="#EAF4FF">
     <td rowspan="2"><center>จังหวัด</center></td>
@@ -35,11 +35,11 @@ for ($i=0; $i < $totacount; $i++)
    ?>
   <tr>
 
-     <td align='right'><?=  $dataArrayTable1[$i][province]  ?></td>
-     <td align='right'><?=  $dataArrayTable1[$i][total]  ?></td>
-     <td align='right'><?=  number_format(($dataArrayTable1[$i][total]/$sumtotaldata)*100,2)  ?></td>
-	 <td align='right'><?=  $dataArrayTable1[$i][total]  ?></td>
-	 <td align='right'><?=  number_format(($dataArrayTable1[$i][total]/$sumtotaldata)*100,2)  ?></td>
+     <td align='center'><?=  $dataArrayTable1[$i][province]  ?></td>
+     <td align='center'><?=  $dataArrayTable1[$i][total]  ?></td>
+     <td align='center'><?=  number_format(($dataArrayTable1[$i][total]/$sumtotaldata)*100,2)  ?></td>
+	 <td align='center'><?=  $dataArrayTable1[$i][total]  ?></td>
+	 <td align='center'><?=  number_format(($dataArrayTable1[$i][total]/$sumtotaldata)*100,2)  ?></td>
   </tr>
   <?php
 }
@@ -47,11 +47,11 @@ for ($i=0; $i < $totacount; $i++)
   </tbody>
   <tfoot>
   <tr bgcolor="#EAF4FF">
-    <td align="right">รวม</td>
-	  <td><?= $total ?></td>
-    <td><?= $percent ?></td>
-    <td><?= $total ?></td>
-	  <td><?= $percent ?></td>
+    <td align="center">รวม</td>
+	  <td align="center"><?= $total ?></td>
+    <td align="center"><?= $percent ?></td>
+    <td align="center"><?= $total ?></td>
+	  <td align="center"><?= $percent ?></td>
   </tr>
   </tfoot>
 </table></div>

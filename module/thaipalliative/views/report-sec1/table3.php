@@ -8,7 +8,7 @@ $domain=Url::home();
 ?>
 <div class="table-responsive">
     <h2>ตารางที่ 3</h2>
-  <p>จระยะเวลาการดูแลผู้ป่วย ที่ให้บริการโดย <ชื่อหน่วยบริการ> </p>
+  <p>ระยะเวลาการดูแลผู้ป่วย ที่ให้บริการโดย <ชื่อหน่วยบริการ> </p>
   <table class="table table-bordered">
     <thead>
   <tr  bgcolor="#EAF4FF">
@@ -69,7 +69,7 @@ $domain=Url::home();
    <td align='center'>&nbsp;</td>
   </tr>
   <tr bgcolor="#EAF4EF">
-    <td >ระยะเวลาที่ดูแลทั้งหมด</td>
+    <td>ระยะเวลาที่ดูแลทั้งหมด</td>
      <td align='center'>&nbsp;</td>
      <td align='center'>&nbsp;</td>
      <td align='center'>&nbsp;</td>

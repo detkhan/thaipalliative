@@ -12,10 +12,10 @@ $domain=Url::home();
   <p>จำนวนและร้อยละผู้ป่วย จำแนกตามผลการประเมินด้านจิตสังคม เป็นรายโรค ระหว่าง <ว/ด/ป> ถึง <ว/ด/ป></p>
   <table class="table table-bordered">
   <tr>
-    <td rowspan="2">โรค</td>
-    <td colspan="2">ปัญหาเศรษฐกิจ</td>
-    <td colspan="2">ปัญหาจิตใจ</td>
-    <td colspan="2">ปัญหาสังคม</td>
+    <td rowspan="2" align="center">โรค</td>
+    <td colspan="2" align="center">ปัญหาเศรษฐกิจ</td>
+    <td colspan="2" align="center">ปัญหาจิตใจ</td>
+    <td colspan="2" align="center">ปัญหาสังคม</td>
     </tr>
     <tr>
       <td><center>จำนวน</center></td>
@@ -98,12 +98,12 @@ $domain=Url::home();
       </tr>
 
       </tbody>
-      <tfoot style="font-weight:bold;">
+      <tfoot style="font-weight:bold;" bgcolor="#33CCCC">
       <tr>
       <td align="center">รวมทั้งหมด</td>
-    	<td align="left" colspan="2"><? echo $sumbusi ?></td>
-      <td align="left" colspan="2"><? echo $sumpfear ?></td>
-    	<td align="left" colspan="2"><? echo $sumsocial ?></td>
+    	<td align="center" colspan="2"><? echo $sumbusi ?></td>
+      <td align="center" colspan="2"><? echo $sumpfear ?></td>
+    	<td align="center" colspan="2"><? echo $sumsocial ?></td>
 
 
       </tr>

@@ -9,11 +9,11 @@ $domain=Url::home();
 <div class="table-responsive">
   <h2>ตารางที่ <?= $table  ?></h2>
   <p>จำนวนผู้ป่วย จำแนกตามหน่วยบริการ เป็นรายเดือน <?= $nametable  ?> ปี พ.ศ. 2016</p>
-  <table class="table table-hover">
+  <table class="table table-bordered">
     <thead>
   <tr  bgcolor="#92db1e">
   <td>พื้นที่</td>
-    <td>ม.ค.</td>
+  <td>ม.ค.</td>
 	<td>ก.พ.</td>
 	<td>มี.ค.</td>
 	<td>เม.ย.</td>
@@ -33,18 +33,18 @@ $domain=Url::home();
 <tbody>
   <tr bgcolor="#96db1e">
     <td >ทั้งหมดใน Palliative Care Cloud</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-	 <td align='right'>&nbsp;</td>
-	 <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-	 <td align='right'>&nbsp;</td>
-	  <td align='right'>&nbsp;</td>
-     <td align='right'>&nbsp;</td>
-	 <td align='right'>&nbsp;</td>
-	 <td align='right'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+	 <td align='center'>&nbsp;</td>
+	 <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+	 <td align='center'>&nbsp;</td>
+	  <td align='center'>&nbsp;</td>
+     <td align='center'>&nbsp;</td>
+	 <td align='center'>&nbsp;</td>
+	 <td align='center'>&nbsp;</td>
   </tr>
   <?php
 foreach ($dataArrayTable13Zone as $key2) {
@@ -59,7 +59,7 @@ foreach ($dataArrayTable13Zone as $key2) {
     <?php
 for ($i=1; $i < 13; $i++) {
      ?>
-    <td align='right'><?= $dataArrayMonthZone[$key2[zone_code]][$i] ?></td>
+    <td align='center'><?= $dataArrayMonthZone[$key2[zone_code]][$i] ?></td>
 <?php
 }
  ?>
@@ -72,7 +72,7 @@ for ($i=1; $i < 13; $i++) {
     <?php
 for ($i=1; $i < 13; $i++) {
      ?>
-     <td align='right'><?= $sum[$i] ?></td>
+     <td align='center'><?= $sum[$i] ?></td>
      <?php
      }
       ?>
@@ -101,7 +101,7 @@ foreach ($dataArrayTable13Province as $key) {
     <?php
 for ($i=1; $i < 13; $i++) {
      ?>
-    <td align='right'><?= $dataArrayMonthProvince[$key[provincecode]][$i] ?></td>
+    <td align='center'><?= $dataArrayMonthProvince[$key[provincecode]][$i] ?></td>
 <?php
     }
      ?>
@@ -112,7 +112,7 @@ for ($i=1; $i < 13; $i++) {
   </tbody>
   <tfoot>
   <tr bgcolor="#92db1e">
-    <td align="right"></td>
+    <td align="center"></td>
 	  <td>..</td>
     <td>..</td>
     <td>..</td>
