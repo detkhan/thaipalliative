@@ -2,8 +2,10 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
-
-
+Yii::$app->formatter->locale = 'th-TH';
+$date_end=$data[0][date_end];
+$dateshowraw=explode('-',$date_end);
+$$dateshow=$dateshowraw[0];
 $domain=Url::home();
 ?>
 <script type="text/javascript" src="<?=$domain ?>/jschart/fusioncharts.js"></script>
@@ -18,7 +20,7 @@ FusionCharts.ready(function(){
   dataFormat: 'json',
   dataSource: {
        "chart": {
-      "caption": "จำนวนผู้ป่วย จำแนกตามรายเดือน ของ<ชื่อหน่วยบริการ>",
+      "caption": "จำนวนผู้ป่วย จำแนกตามรายเดือน ของ <?=  $data[0][hosname] ?>",
       "numberprefix": "",
       "plotgradientcolor": "",
       "bgcolor": "FFFFFF",
@@ -38,7 +40,7 @@ FusionCharts.ready(function(){
       "legendborderalpha": "0",
       "palettecolors": "#f8bd19,#008ee4,#33bdda,#e44a00,#6baa01,#583e78",
       "showborder": "0",
-  "xAxisName":"ปี",
+  "xAxisName":"ปี <?= $$dateshow+543      ?>",
   "yAxisName":"จำนวนผู้ป่วย(คน)"
   },
   "categories": [
@@ -95,5 +97,5 @@ $newdata=$key[total];
 fusioncharts.render();
 });
 </script>
-รูปที่ 4 จำนวนผู้ป่วย จำแนกตามรายเดือน ของ โรงพยาบาล
+รูปที่ 4 จำนวนผู้ป่วย จำแนกตามรายเดือน ของ <?=  $data[0][hosname] ?>
 <div id="chart-container"></div>

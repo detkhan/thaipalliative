@@ -2,20 +2,19 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
-
+Yii::$app->formatter->locale = 'th-TH';
 
 $domain=Url::home();
 ?>
-<div class="container">
+<div class="table-responsive">
   <h2>ตารางที่ 1 </h2>
-  <p>จำนวนและร้อยละผู้ป่วย ที่ให้บริการโดย<ชื่อหน่วยบริการ> จำแนกตามจังหวัดที่เป็นภูมิลำเนา</p>
+  <p>จำนวนและร้อยละผู้ป่วย ที่ให้บริการโดย <?=  $data[0][hosname] ?> จำแนกตามจังหวัดที่เป็นภูมิลำเนา</p>
   <table class="table table-hover" width="50%">
     <thead>
   <tr  bgcolor="#EAF4FF">
     <td rowspan="2"><center>จังหวัด</center></td>
     <td colspan="2"><center>ทั้งหมด</center></td>
-   <td colspan="2" ><center>เฉพาะระหว่าง
-<ว/ด/ป> ถึง <ว/ด/ป></center>
+   <td colspan="2" ><center>เฉพาะระหว่าง <? echo Yii::$app->formatter->asDate($data[0][date_start], 'long')  ?> ถึง<? echo Yii::$app->formatter->asDate($data[0][date_end], 'long')  ?></center>
 </td>
   </tr>
   <tr bgcolor="#EAF4FF">

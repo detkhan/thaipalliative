@@ -7,7 +7,7 @@ use yii\helpers\Url;
 $domain=Url::home();
 
 ?>
-<div class="container">
+<div class="table-responsive">
   <h2>ตารางที่ 30</h2>
   <p>จำนวนและร้อยละผู้ป่วย จำแนกตามผลการประเมินด้านจิตวิญญาณ เป็นรายโรค ระหว่าง <ว/ด/ป> ถึง <ว/ด/ป></p>
   <table class="table table-bordered">
@@ -154,17 +154,17 @@ $domain=Url::home();
       <tr bgcolor="#ecee1c">
       <td align="center">รวมทั้งหมด</td>
     	<td align="center"><? echo $sumhope ?></td>
-      <td align="center"><? echo $sumhopepercent ?></td>
+      <td align="center"><? //echo $sumhopepercent ?></td>
       <td align="center"><? echo $sumfear ?></td>
-    	<td align="center"><? echo $sumfearpercent ?></td>
+    	<td align="center"><? //echo $sumfearpercent ?></td>
     	<td align="center"><? echo $sumunfinished ?></td>
-    	<td align="center"><? echo $sumunfinishedpercent ?></td>
+    	<td align="center"><? //echo $sumunfinishedpercent ?></td>
     	<td align="center"><? echo $sumconnected ?></td>
-      <td align="center"><? echo $sumconnectedpercent ?></td>
+      <td align="center"><? //echo $sumconnectedpercent ?></td>
       <td align="center"><? echo $sumcontrol ?></td>
-    	<td align="center"><? echo $sumcontrolpercent ?></td>
+    	<td align="center"><? //echo $sumcontrolpercent ?></td>
     	<td align="center"><? echo $sumreligious ?></td>
-    	<td align="center"><? echo $sumreligiouspercent ?></td>
+    	<td align="center"><? //echo $sumreligiouspercent ?></td>
       </tr>
       </tfoot>
     </table>

@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
-
+Yii::$app->formatter->locale = 'th-TH';
 
 $domain=Url::home();
 ?>
@@ -49,7 +49,7 @@ fusioncharts.render();
 </script>
 <div class="row">
   <div class="col-md-12">
-    รูปที่ 2 จำนวนผู้ป่วย เฉพาะระยะที่เรียกแสดงรายงานคือระหว่าง <ว/ด/ป> ถึง <ว/ด/ป>
+    รูปที่ 2 จำนวนผู้ป่วย เฉพาะระยะที่เรียกแสดงรายงานคือ ระหว่าง <? echo Yii::$app->formatter->asDate($data[0][date_start], 'long')  ?> ถึง<? echo Yii::$app->formatter->asDate($data[0][date_end], 'long')  ?>
   <div style="border:1px solid black; width:360px; margin:auto;text-align:center;">
     จำนวนผู้ป่วยทั้งหมดใน Palliative Care Cloud
     <br> N = <?= $totalall ?> คน <!--Data tbdata_1 register -->
@@ -61,7 +61,7 @@ fusioncharts.render();
 <div class="col-md-12">
 <div style="border:1px solid black; width:360px; margin:auto;text-align:center;">
   จำนวนผู้ป่วยทั้งหมดที่ให้บริการโดย <br>
-  โรงพยาบาลศรีนครินทร์
+  <?=  $data[0][hosname] ?>
   <br> N = <?= $totalsite ?> คน คิดเป็น <?= $totalpercent ?> %
 </div><center>
 <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span><br></center>

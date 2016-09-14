@@ -14,6 +14,121 @@ class ReportSec3Controller extends Controller
     {
         return $this->render('index');
     }
+    public function actionTable29()
+    { //cancer
+      $cancerbusi=self::GetDataTable29(1,'var56r1');
+      $cancerpfear=self::GetDataTable29(1,'var56r2');
+      $cancersocial =self::GetDataTable29(1,'var56r3');
+
+      //renal
+      $renalbusi=self::GetDataTable29(2,'var56r1');
+      $renalpfear=self::GetDataTable29(2,'var56r2');
+      $renalsocial =self::GetDataTable29(2,'var56r3');
+
+      //trauma
+      $traumabusi=self::GetDataTable29(6,'var56r1');
+      $traumapfear=self::GetDataTable29(6,'var56r2');
+      $traumasocial =self::GetDataTable29(6,'var56r3');
+
+      //lung
+      $lungbusi=self::GetDataTable29(4,'var56r1');
+      $lungpfear=self::GetDataTable29(4,'var56r2');
+      $lungsocial =self::GetDataTable29(4,'var56r3');
+
+      //neuro
+      $neurobusi=self::GetDataTable29(5,'var56r1');
+      $neuropfear=self::GetDataTable29(5,'var56r2');
+      $neurosocial =self::GetDataTable29(5,'var56r3');
+
+      //heart
+      $heartbusi=self::GetDataTable29(3,'var56r1');
+      $heartpfear=self::GetDataTable29(3,'var56r2');
+      $heartsocial =self::GetDataTable29(3,'var56r3');
+
+    //  other
+    $otherbusi=self::GetDataTable29(7,'var56r1');
+    $otherpfear=self::GetDataTable29(7,'var56r2');
+    $othersocial =self::GetDataTable29(7,'var56r3');
+
+      //  exit();
+      $render="table29";
+      $url=$this->renderAjax($render, [
+      'cancerbusi' => $cancerbusi,
+      'cancerpfear' => $cancerpfear,
+      'cancersocial' => $cancersocial,
+
+      //renal
+      'renalbusi' => $renalbusi,
+      'renalpfear' => $renalpfear,
+      'renalsocial' => $renalsocial,
+
+      //trauma
+      'traumabusi' => $traumabusi,
+      'traumapfear' => $traumapfear,
+      'traumasocial' => $traumasocial,
+
+      //lung
+      'lungbusi' => $lungbusi,
+      'lungpfear' => $lungpfear,
+      'lungsocial' => $lungsocial,
+
+      //Neuro
+      'neurobusi' => $neurobusi,
+      'neuropfear' => $neuropfear,
+      'neurosocial' => $neurosocial,
+
+      //heart
+      'heartbusi' => $heartbusi,
+      'heartpfear' => $heartpfear,
+      'heartsocial' => $heartsocial,
+
+      //other
+      'otherbusi' => $otherbusi,
+      'otherpfear' => $otherpfear,
+      'othersocial' => $othersocial,
+
+      ]);
+      return  $url;
+    }//test
+
+    public function GetDataTable29($Disease,$type)
+    {
+      if($Disease=='all'){
+    $dataDisease='>0';
+
+      }else{
+    $dataDisease="=$Disease";
+      }
+      $sqlControl = "SELECT
+    *
+    FROM
+    (SELECT
+    1 as id,
+      COUNT(DISTINCT a.ptid) as total
+      FROM
+      `tbdata_1` a
+      INNER JOIN
+      `tbdata_2` b
+      ON a.ptid=b.ptid
+      WHERE
+      var49 $dataDisease
+      AND $type ='1') as a
+    INNER JOIN
+    (SELECT
+    1 as id,
+      COUNT(DISTINCT a.ptid) as sumtotal
+      FROM
+      `tbdata_1` a
+      INNER JOIN
+      `tbdata_2` b
+      ON a.ptid=b.ptid
+      WHERE
+      var49 $dataDisease) as b
+    ON a.id=b.id
+    ";
+    $dataProvider = Yii::$app->db->createCommand($sqlControl)->queryAll();
+    return $dataProvider;
+  } // table 29
 
     public function actionTable30()
     { //cancer

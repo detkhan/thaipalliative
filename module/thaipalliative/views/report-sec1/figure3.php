@@ -2,7 +2,7 @@
 use yii\helpers\Html;
 use yii\grid\GridView;
 use yii\helpers\Url;
-
+Yii::$app->formatter->locale = 'th-TH';
 
 $domain=Url::home();
 ?>
@@ -18,7 +18,7 @@ FusionCharts.ready(function(){
   dataFormat: 'json',
   dataSource: {
        "chart": {
-      "caption": "จำนวนผู้ป่วย จำแนกตามรายปี ของ<ชื่อหน่วยบริการ>",
+      "caption": "จำนวนผู้ป่วย จำแนกตามรายปี ของ <?=  $data[0][hosname] ?>",
       "numberprefix": "",
       "plotgradientcolor": "",
       "bgcolor": "FFFFFF",
@@ -95,5 +95,5 @@ $newdata=$key[total];
 fusioncharts.render();
 });
 </script>
-รูปที่ 3 จำนวนผู้ป่วย จำแนกตามรายปี ของ โรงพยาบาล
+รูปที่ 3 จำนวนผู้ป่วย จำแนกตามรายปี ของ <?=  $data[0][hosname] ?>
 <div id="chart-container"></div>

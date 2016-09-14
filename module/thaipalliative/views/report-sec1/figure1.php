@@ -61,7 +61,7 @@ fusioncharts.render();
 <div class="col-md-12">
 <div style="border:1px solid black; width:360px; margin:auto;text-align:center;">
   จำนวนผู้ป่วยทั้งหมดที่ให้บริการโดย <br>
-  โรงพยาบาลศรีนครินทร์
+  <?=  $data[0][hosname] ?>
   <br> N = <?= $totalsite ?> คน คิดเป็น <?= $totalpercent ?> %
 </div><center>
 <span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span><br></center>

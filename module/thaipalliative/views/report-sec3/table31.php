@@ -6,7 +6,7 @@ use yii\helpers\Url;
 
 $domain=Url::home();
 ?>
-<div class="container">
+<div class="table-responsive">
   <h2>ตารางที่ 31</h2>
   <p>จำนวนและร้อยละผู้ป่วย จำแนกตามผลการประเมินด้านความรับรู้และการมีส่วนร่วมในการตัดสินใจ เป็นรายโรค ระหว่าง <ว/ด/ป> ถึง <ว/ด/ป></p>
   <table class="table table-bordered">
@@ -158,17 +158,17 @@ $domain=Url::home();
       <tr bgcolor="#ecee1c">
       <td align="center">รวมทั้งหมด</td>
     	<td align="center"><? echo $sumpt31 ?></td>
-      <td align="center"><? echo $sumpt31percent ?></td>
+      <td align="center"><? //echo $sumpt31percent ?></td>
       <td align="center"><? echo $sumfamily31 ?></td>
-    	<td align="center"><? echo $sumfamily31percent ?></td>
+    	<td align="center"><? //echo $sumfamily31percent ?></td>
     	<td align="center"><? echo $sumpd31 ?></td>
-    	<td align="center"><? echo $sumpd31percent ?></td>
+    	<td align="center"><? //echo $sumpd31percent ?></td>
     	<td align="center"><? echo $sumpdfamily31 ?></td>
-      <td align="center"><? echo $sumpdfamily31percent ?></td>
+      <td align="center"><? //echo $sumpdfamily31percent ?></td>
       <td align="center"><? echo $sumtarget31 ?></td>
-    	<td align="center"><? echo $sumtarget31percent ?></td>
+    	<td align="center"><? //echo $sumtarget31percent ?></td>
     	<td align="center"><? echo $sumtargetf31 ?></td>
-    	<td align="center"><? echo $sumtargetf31percent ?></td>
+    	<td align="center"><? //echo $sumtargetf31percent ?></td>
       </tr>
       </tfoot>
     </table>
